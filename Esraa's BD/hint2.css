@@ -1,0 +1,75 @@
+body {
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 800;
+
+    margin: 0;
+
+    background:
+    linear-gradient(
+    to right,
+    #9967ce,
+    #9fb2d8) border-box;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    color: white;
+    background-color: linear-gradient(178deg, #EFF4F8 0%, rgba(218, 232, 243, 0.00) 100%);
+    background: linear-gradient(90deg,
+    #9563C4 2.60%, #98A0F0 58.33%, rgba(159, 184, 237, 0.75) 100%);
+
+    border: none;
+    padding: 15px 50px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+button::after {
+    content:"";
+    position: absolute;
+    inset: 6px;
+    height: 50%;
+    width: 60%;
+    transform: translate(6px,20px);
+    border-radius: 15px;
+    background: linear-gradient(90deg,
+     #9563C4 0%, #B497ED 52.60%, #9FB8ED 100%);
+    filter: blur(15px);
+    z-index: -1;
+
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+p {
+    font-size: larger;
+    font-weight: bolder;
+    word-spacing: 2.5px;
+}

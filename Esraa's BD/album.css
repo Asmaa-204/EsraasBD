@@ -1,0 +1,219 @@
+.body1 {
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    text-align: center;
+    
+    font-family: 'Alegreya Sans SC', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.body2 {
+    font-family: 'Amiri', serif;
+    font-family: 'Lemonada', cursive;
+    background-color: black;
+}
+
+.lock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2, p {
+    word-spacing: 3px;
+}
+
+h1 {
+    font-weight: 800;
+    word-spacing: 3px;
+
+    font-size: 80px;
+    text-align: center;
+
+    background:
+    linear-gradient(
+    to right,
+    #9967ce,
+    #9fb2d8) border-box;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lock h1 {
+    font-size: 40px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.puzzleArea {
+    width: max-content;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.check {
+    color: white;
+    background-color: linear-gradient(178deg, #EFF4F8 0%, rgba(218, 232, 243, 0.00) 100%);
+    background: linear-gradient(90deg,
+    #9563C4 2.60%, #98A0F0 58.33%, rgba(159, 184, 237, 0.75) 100%);
+
+    border: none;
+    border-radius: 15px;
+
+    padding: 10px 50px;
+    margin: 30px;
+
+    position: relative;
+    cursor: pointer;
+
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+}
+
+input {
+   
+    border: none;
+    color: white;
+
+    background-color: black;
+
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+.inputField {
+    margin: 0 auto;
+    /* width: 30%; */
+
+    padding: 10px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: linear-gradient(
+    to right,
+    rgb(0, 0, 0),
+    rgb(0, 0, 0)) padding-box,
+    linear-gradient(90deg,
+    #9563C4 2.60%, 
+    #98A0F0 58.33%, 
+    rgba(159, 184, 237, 0.75) 100%) border-box;
+}
+
+.solved {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: green;
+}
+
+.wrong {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #FF0303;
+}
+
+
+.flash {  
+    animation: blink-text 2s linear infinite;
+}
+
+.hidden {
+    /* display: none; */
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+}
+
+.show {
+    opacity: 1;
+    transition: all 1s;
+    filter: blur(0);
+}
+
+.hide {
+    display: none;
+    transition: all 2s;
+    filter: blur(5px);
+}
+
+@keyframes blink-text {
+    0% {
+     opacity: 0;
+    }
+    50% {
+     opacity: 1;
+    }
+    100% {
+     opacity: 0;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+
+    background-color: bisque;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.658);
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+img {
+    /* vertical-align: middle; */
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    height: max-content;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    font-family: 'Amiri', serif;
+    font-family: 'Lemonada', cursive;
+    background-color: black;
+    color: black;
+}
+
+.vertical {
+    height: 610px;
+}
+
+.text {
+    padding: 40px;
+}
