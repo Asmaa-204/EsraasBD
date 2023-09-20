@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./puzzle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9f4c644352.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="hide puzzlePage">
+        <h1 class="conan">
+            <span class="conan first hidden">You</span>
+            <span class="conan second hidden"> are</span>
+            <span class="conan third hidden"> now</span>
+            <span class="conan fourth hidden"><img height="100px" src="./assests/detectiveConanLogo.svg.png" alt=""></span>
+        </h1>
+
+        <div class="puzzleArea hidden hide">
+            <div class="morseCode">
+                <h2 class="decodeMe">DECODE ME!</h2>
+               
+                <div class="codeContainer">
+                    <div class="code">
+                        <div class="dot"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                    </div>
+        
+                    <div class="code">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                    </div>
+                    
+                    <div class="code">
+                        <div class="dot"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                    </div>
+                    
+                    <div class="code">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dash"></div>
+                    </div>
+                    
+                    <div class="code">
+                        <div class="dash"></div>
+                        <div class="dot"></div>
+                    </div>
+                    
+                    <div class="code">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                    </div>
+        
+                    <div class="code">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dash"></div>
+                        <div class="dash"></div>
+                    </div>
+                </div>
+
+                <div class="inputField">
+                    <input name="morsePass" type="password" placeholder="Give a guess">
+                    <i class="fa-regular field-icon fa-eye-slash" style="color: #ffffff;"></i>
+               </div>
+    
+                <button class="check">Check</button>
+                <p class="indicator flash">WELL DONE</p>
+    
+                <a class="hint" href="./wantAHint.html"><button class="hintBtn">Want A hint?</button></a>
+            </div>
+
+
+            <div class="puzzle2 hidden hide">
+                <h2>Using the previous decoded message..</h2>
+                <p class="geranium">Search in your gallery for a pretty-looking red stuff</p>
+                <div class="inputField">
+                    <input name="morsePass" type="password" placeholder="Give a guess">
+                    <i class="fa-regular field-icon fa-eye-slash" style="color: #ffffff;"></i>
+               </div>
+    
+                <button class="check">Check</button>
+                <p class="indicator flash">WELL DONE</p>
+    
+                <a class="hint" href="./hint2.html"><button class="hintBtn">Want A hint?</button></a>
+            </div>
+
+          
+           
+        
+        </div>
+
+        
+        <a class="exit hidden hide" href="./lock.html"><button class="exitBtn">You're one step closer to the treasure</button></a>
+       
+    </div>
+    <div class="replace cautionPage">
+        <h1 class="blink-text">CAUTION!</h1>
+        <p>Put your headphones on</p>
+        <h2>Sound is about to be played!!!</h2>
+       
+        <button class="btn">I'm ready</button>
+    </div>
+    
+</body>
+<script src="./puzzle.js"></script>
+</html>
